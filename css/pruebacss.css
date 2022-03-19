@@ -15,11 +15,8 @@ main {
   grid-template-columns: 40% 40% 20%;
   grid-template-rows: 100px 40px;
   height: auto;
-  grid-template-areas: "a1 a2 a3"
- "a1 a5 a6";
-  align-items: center;
-  border-top: 4px solid crimson;
-  border-bottom: 2px solid crimson; }
+  grid-template-areas: "a1 a2 a3" "a1 a5 a6";
+  align-items: center; }
 
 .hijoUno {
   background-color: #33333d;
@@ -41,7 +38,9 @@ h1 {
   background-color: #33333d;
   padding: 2%;
   margin-bottom: 3px;
-  margin-left: 5px; }
+  margin-left: 5px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 1px #fff; }
 
 .flete {
   grid-area: a3;
@@ -57,7 +56,7 @@ h1 {
   margin-bottom: 2em; }
 
 footer {
-  color: #d7e9fa;
+  color: white;
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
@@ -81,8 +80,7 @@ footer {
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: 400px 400px;
-  grid-template-areas: "p1 p2"
- "p3 p4";
+  grid-template-areas: "p1 p2" "p3 p4";
   column-gap: 2em;
   row-gap: 2em;
   justify-content: center;
@@ -116,22 +114,9 @@ footer {
 
 #menuNav {
   background-color: #33333d;
-  position: sticky;
   top: 0pt; }
 
-.cCuatro {
-  color: white; }
-
-.cUno {
-  color: white; }
-
-.cDos {
-  color: white; }
-
-.cCinco {
-  color: white; }
-
-.cTres {
+.cUno, .cDos, .cTres, .cCuatro, .cCinco {
   color: white; }
 
 #padre {
@@ -156,8 +141,7 @@ footer {
   background-color: #d7e9fa;
   grid-template-columns: 45% 45%;
   grid-template-rows: 376px 376px;
-  grid-template-areas: "t1 t2"
- "t3 t4";
+  grid-template-areas: "t1 t2" "t3 t4";
   justify-content: center;
   align-content: center;
   column-gap: 2%;
@@ -165,38 +149,45 @@ footer {
   height: 800px; }
 
 .trabajoUno {
-  grid-area: t1;
   width: 100%;
   height: 100%;
-  border-radius: 3%; }
+  border-radius: 3%;
+  grid-area: t1; }
 
 .trabajoUno:hover {
-  transition: 1.2, 3; }
+  transform: scale(1.1, 1.1); }
+
+.trabajoDos:hover {
+  transform: scale(1.1, 1.1); }
+
+.trabajoTres:hover {
+  transform: scale(1.1, 1.1); }
+
+.trabajoCuatro:hover {
+  transform: scale(1.1, 1.1); }
 
 .trabajoDos {
-  grid-area: t2;
   width: 100%;
   height: 100%;
-  border-radius: 3%; }
+  border-radius: 3%;
+  grid-area: t2; }
 
 .trabajoTres {
-  grid-area: t3;
   width: 100%;
   height: 100%;
-  border-radius: 3%; }
+  border-radius: 3%;
+  grid-area: t3; }
 
 .trabajoCuatro {
-  grid-area: t4;
   width: 100%;
   height: 100%;
-  border-radius: 3%; }
+  border-radius: 3%;
+  grid-area: t4; }
 
 .video {
   grid-area: p2;
   width: 100%;
-  height: 90%;
-  margin-top: 1em;
-  margin-bottom: 1em; }
+  height: 80%; }
 
 .armando {
   color: #d7e9fa;
@@ -208,27 +199,6 @@ footer {
 
 .rotuloP {
   color: #d7e9fa; }
-
-@media only screen and (max-width: 600px) {
-  #menuNav {
-    background-color: #e9212b;
-    position: sticky;
-    top: 0pt; }
-  #padre {
-    background-color: #33333d;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 45px;
-    grid-template-areas: "a1 a2 a3 a4";
-    column-gap: 1em; }
-  #padre #hijoUno {
-    grid-area: a1; }
-  #padre #hijoDos {
-    grid-area: a2; }
-  #padre #hijoCuatro {
-    grid-area: a3; }
-  #padre #hijoCinco {
-    grid-area: a4; } }
 
 #hijoUno {
   grid-area: n2;
@@ -288,11 +258,7 @@ iframe {
   display: grid;
   grid-template-columns: 10% 50% 20% 10%;
   grid-template-rows: 60px 300px 300px 60px 60px;
-  grid-template-areas: "m2 m2 m3 m3"
- "m5 m5 m6 m6"
- "m5 m5 m6 m6"
- "m10 m11 m12 13"
- "m14 m15 m16 m17";
+  grid-template-areas: "m2 m2 m3 m3" "m5 m5 m6 m6" "m5 m5 m6 m6" "m10 m11 m12 13" "m14 m15 m16 m17";
   background-color: #33333d;
   height: auto; }
 
@@ -319,6 +285,23 @@ iframe {
 
 .queHacemosHijo {
   color: #d7e9fa; }
+
+.hacemos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 85%;
+  margin-left: 30px; }
+
+.hacemos__hacemos {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #d7e9fa; }
+
+.texto {
+  font-size: 25px;
+  color: #f5f6f8;
+  text-align: justify;
+  line-height: 1.5; }
 
 #dondeEstamos {
   grid-area: m3;
@@ -392,17 +375,33 @@ iframe {
   background-color: #d7e9fa;
   height: auto; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+  #menuNav {
+    background-color: #e9212b;
+    position: sticky;
+    top: 0pt; }
+  #padre {
+    background-color: #33333d;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 45px;
+    grid-template-areas: "a1 a2 a3 a4";
+    column-gap: 1em; }
+  #padre #hijoUno {
+    grid-area: a1; }
+  #padre #hijoDos {
+    grid-area: a2; }
+  #padre #hijoCuatro {
+    grid-area: a3; }
+  #padre #hijoCinco {
+    grid-area: a4; }
+  .cUno, .cDos, .cTres, .cCuatro, .cCinco {
+    font-size: 12px; }
   #main {
     row-gap: 15px;
     grid-template-columns: 100%;
     grid-template-rows: 100px 300px 100px 300px 150px 150px;
-    grid-template-areas: "q1" 
- "q2"
- "q3"
- "q4"
- "q5"
- "q6";
+    grid-template-areas: "q1"  "q2" "q3" "q4" "q5" "q6";
     height: auto; }
   #queHacemos {
     grid-area: q1;
@@ -410,6 +409,10 @@ iframe {
     width: 100%;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif; }
+  .texto {
+    font-size: 13px;
+    color: #f5f6f8;
+    text-align: justify; }
   #portada {
     grid-area: q2;
     width: 100%;
@@ -433,18 +436,67 @@ iframe {
     width: 40%;
     justify-self: center;
     margin-top: 1em; }
+  *header {
+    height: 100px;
+    border-bottom: none; }
   .padreTitulo {
-    grid-template-columns: 50% 30% 20%;
-    grid-template-areas: "t1 t2 t3"; }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "t1 t2" "t1 t3";
+    justify-items: center;
+    align-items: center; }
   .hijoUno {
     grid-area: t1;
     justify-self: center;
-    align-self: center;
-    height: 100%; }
+    align-self: center; }
+  .titulo {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    font-stretch: semi-expanded;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px #fff; }
   .hijoDos {
-    grid-area: t2; }
+    grid-area: t3; }
+  .hijoDos p {
+    font-size: 13px;
+    color: #d7ec16;
+    text-align: center;
+    margin-top: 25px; }
   .flete {
-    grid-area: t3; } }
+    grid-area: t2;
+    height: 20px;
+    width: 50px; }
+  #mainProductos {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 200px 20px 200px 20px 200px 20px 200px;
+    grid-template-areas: "pr1" "pr2" "pr3" "pr4" "pr5" "pr6" "pr7";
+    row-gap: 20px;
+    justify-content: center;
+    height: 1100px;
+    justify-items: center;
+    align-items: center; }
+  .ratonaUno {
+    grid-area: pr1;
+    height: 100%;
+    border-radius: 3%; }
+  .ratonaDos {
+    grid-area: pr3;
+    height: 100%;
+    border-radius: 3%; }
+  .lamparaUno {
+    grid-area: pr5;
+    height: 100%;
+    border-radius: 3%; }
+  .lamparaDos {
+    grid-area: pr7;
+    height: 100%;
+    border-radius: 3%; }
+  .rotuloP {
+    font-size: 20px; } }
 
 .pres {
   display: inline-block;
@@ -455,7 +507,7 @@ iframe {
   color: #d7e9fa;
   display: inline-block;
   margin: 0em 1em 0em 1em;
-  font-size: 20px; }
+  font-size: 15px; }
 
 .botonSeguinos {
   background-color: #2a2ada; }
