@@ -31,11 +31,20 @@ main{
     
 }
 .hijoDos{
-    color: rgb(244, 247, 250);
-    grid-area: a5;
-    font-size: calc( 15px + 1vw);
-    justify-self: center;
-    align-self: center;
+      color: rgb(224, 219, 219);
+      grid-area: a5;
+      font-size: calc( 12px + 1vw);
+      justify-self: center;
+      align-self: center;
+}
+.servicio{
+    grid-area: a2;
+}
+.servicio p{
+    margin-top: 10px;
+    text-align: center;
+    line-height: .5;
+    color: $colorLetra;
 }
 
 h1{
@@ -52,38 +61,60 @@ h1{
  }
  .flete{
      grid-area: a3;
+     color: $colorLetra;
      height: 40%;
      width: 50%;
  }
 .animate__animated{
-    animation-iteration-count:calc(3);
+    animation-iteration-count:calc(5);
 }
  .promo{
      display: inline-block;
      margin-left: 4em;
      margin-bottom: 2em;
  }
- footer{
-    color: $colorLetra;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 2rem;
-    background-color: rgb(42, 42, 218);
-    padding: 0%;
-    margin: 0%;
-    border-top: 10px solid red;
- }
+
  #footer{
-     background-image: linear-gradient(to left ,  rgb(221, 133, 133) , rgb(25, 25, 27));
- }
- .bi-facebook{
-     font-size: 30px;
-     background-color: rgb(9, 9, 231);
- }
- .bi-facebook:hover{
-          font-size: 40px;
-          background-color:rgb(5, 5, 121); 
- }
+     display: grid;
+     grid-template-columns: 30% 10% 10% 10% 40%  ;
+     grid-template-rows: 100px 100px;
+     grid-template-areas: "f1 f2 f2 f2 f3"
+                          "f4 f5 f6 f7 f8";
+    justify-items: center;
+    align-items: center;
+     background-image: linear-gradient(to left ,  rgb(247, 55, 55) , rgb(220, 20, 60));
+     }
+#whatsapp{
+    grid-area: f3;
+}
+.footer__DivH5{
+    grid-area: f2;
+}
+.footer__H5{
+    margin-top: 15px;
+    color: $colorLetra;
+    text-align: center;
+}
+.h5__P{
+    color: $colorLetra;
+    text-align: center;
+    line-height: 1;
+
+}
+.bi-whatsapp{
+       color: rgb(244, 250, 246);
+       background-color: darkgreen;
+       border-radius: 10%;
+}
+#footer__Facebook{
+              grid-area: f5;
+}
+#footer__Twitter{
+    grid-area: f6;
+    }
+#footer__Instagram{
+    grid-area: f7;
+}
  #mainProductos{
      display: grid;
      grid-template-columns: 40% 40%;
@@ -381,14 +412,6 @@ iframe{
    background-color: lawngreen;
    transform: translate(10px , 10px);
 }
-#whatsapp{
-   grid-area: m10;
-   margin-top: 10px;
-   height: 100%;
-   transition: all 2s;
-   position: sticky;
-   bottom: 0;
-}
 #whatsapp:hover{
    transform: scale(1,1.5);
 }
@@ -574,6 +597,4 @@ iframe{
          margin: 0em 1em 0em 1em;
          font-size: 15px;
      }
-     .botonSeguinos{
-         background-color: rgb(42, 42, 218);
-     }
+     
