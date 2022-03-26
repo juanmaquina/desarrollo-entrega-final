@@ -68,17 +68,44 @@ h1 {
 #footer {
   display: grid;
   grid-template-columns: 30% 10% 10% 10% 40%;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 100px 90px;
   grid-template-areas: "f1 f2 f2 f2 f3" "f4 f5 f6 f7 f8";
   justify-items: center;
   align-items: center;
   background-image: linear-gradient(to left, #f73737, crimson); }
 
 #whatsapp {
-  grid-area: f3; }
+  grid-area: f2; }
+
+.footerH3 {
+  grid-area: f1; }
+
+.footer__H3 {
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px #fff; }
+
+.footerH3 p {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  line-height: 1; }
 
 .footer__DivH5 {
-  grid-area: f2; }
+  grid-area: f3; }
+
+.seguinos {
+  align-self: center;
+  grid-area: f4;
+  font-size: 15px; }
+
+.seguinos h3 {
+  color: #0393f3;
+  border: 1px solid #f1d6d6;
+  border-radius: 5%; }
 
 .footer__H5 {
   margin-top: 15px;
@@ -93,10 +120,22 @@ h1 {
 .bi-whatsapp {
   color: #f4faf6;
   background-color: darkgreen;
-  border-radius: 10%; }
+  border-radius: 20%; }
+
+.bi-whatsapp:hover {
+  color: rgba(19, 110, 247, 0.911); }
 
 #footer__Facebook {
   grid-area: f5; }
+
+.bi-facebook:hover {
+  color: white; }
+
+.bi-twitter:hover {
+  color: white; }
+
+.bi-instagram:hover {
+  color: white; }
 
 #footer__Twitter {
   grid-area: f6; }
@@ -285,16 +324,38 @@ iframe {
   justify-content: space-evenly;
   display: grid;
   grid-template-columns: 10% 50% 20% 10%;
-  grid-template-rows: 60px 300px 300px 60px 60px;
+  grid-template-rows: 60px 300px 300px 80px 80px;
   grid-template-areas: "m2 m2 m3 m3" "m5 m5 m6 m6" "m5 m5 m6 m6" "m10 m11 m12 13" "m14 m15 m16 m17";
   background-color: #33333d;
   height: auto; }
+
+.iconos {
+  grid-area: m15;
+  display: inline-block; }
+
+.iconos div {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 120px; }
+
+.iconos img {
+  color: #fff; }
+
+.dolar {
+  grid-area: m14; }
+
+.dolarHoy {
+  background-color: #016929;
+  color: white;
+  width: 100%;
+  font-size: 20px; }
 
 .d-block w-100 {
   height: 100%;
   width: 100%; }
 
 #queHacemos {
+  margin-top: 15px;
   grid-area: m2;
   justify-items: center;
   color: white;
@@ -332,6 +393,7 @@ iframe {
   line-height: 1.5; }
 
 #dondeEstamos {
+  margin-top: 15px;
   grid-area: m3;
   color: #d7e9fa;
   align-items: center;
@@ -346,50 +408,42 @@ iframe {
   background-color: #33333d; }
 
 #portada {
+  margin-top: 20px;
   grid-area: m5;
   width: auto;
   height: auto; }
 
 #mapa {
   width: 100%;
-  height: 100%;
+  height: 93%;
   grid-area: m6;
   align-self: center; }
 
 #presupuesto {
-  display: inline-block;
   grid-area: m11; }
 
 #presupuesto:hover {
-  background-color: lawngreen;
-  transform: translate(10px, 10px); }
+  color: white; }
 
 .presupuestoHijo {
   color: #d7e9fa;
-  background-color: crimson;
-  grid-area: m11;
+  background-image: linear-gradient(to left, #f73737, crimson);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 50px;
+  font-size: 40px;
   width: 100%;
   height: 100%;
   justify-self: center;
-  margin-top: 10px; }
+  margin-bottom: 10px; }
 
 .presupuestoHijo:hover {
-  color: #33333d;
-  background-color: lawngreen;
-  transform: translate(10px, 10px); }
+  background-color: rgba(38, 70, 253, 0.911);
+  color: white; }
 
 .consulta {
   color: #d7e9fa; }
 
 .consulta:hover {
-  color: #19191b;
-  background-color: lawngreen;
-  transform: translate(10px, 10px); }
-
-#whatsapp:hover {
-  transform: scale(1, 1.5); }
+  color: white; }
 
 #mainContacto {
   background-color: #d7e9fa;
