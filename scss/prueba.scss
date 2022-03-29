@@ -53,7 +53,7 @@ h1{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc( 50px + 1vw);
     background-color: rgb(51, 51, 61);
-    padding: 2%;
+    padding: 8%;
     margin-bottom: 3px;
     margin-left: 5px;
     font-weight: bolder;
@@ -77,18 +77,24 @@ h1{
  #footer{
      display: grid;
      grid-template-columns: 30% 10% 10% 10% 40%  ;
-     grid-template-rows: 100px 90px;
+     grid-template-rows: 100px 100px;
      grid-template-areas: "f1 f2 f2 f2 f3"
                           "f4 f5 f6 f7 f8";
     justify-items: center;
     align-items: center;
      background-image: linear-gradient(to left ,  rgb(247, 55, 55) , rgb(220, 20, 60));
      }
-#whatsapp{
-    grid-area: f2;
+.card__Footer{
+        grid-area: f1;
+        background-image: linear-gradient(to left ,  rgb(247, 55, 55) , rgb(220, 20, 60));
+        color: $colorLetra;
+        height: 35px;
+        margin-top: 5px;
+        justify-self:center;
+        align-self: flex-start;
 }
 .footerH3{
-    grid-area: f1;
+    grid-area: f2;
 }
 .footer__H3{
     font-weight: bolder;
@@ -108,17 +114,18 @@ h1{
     grid-area: f3;
 }
 .seguinos{
-    align-self: center;
+    align-self:flex-end;
     grid-area: f4;
-   font-size: 15px;
 }
 .seguinos h3{
     color: rgb(3, 147, 243);
-    border: 1px solid rgb(241, 214, 214);
+    border: 1px solid rgb(245, 47, 47);
     border-radius: 5%;
+    font-size: 35px;
+    font-weight: 700;
 }
 .footer__H5{
-    margin-top: 15px;
+    margin-top: 25px;
     color: $colorLetra;
     text-align: center;
 }
@@ -128,14 +135,7 @@ h1{
     line-height: 1;
 
 }
-.bi-whatsapp{
-       color: rgb(244, 250, 246);
-       background-color: darkgreen;
-       border-radius: 20%;
-}
-.bi-whatsapp:hover{
-           color: rgba(19, 110, 247, 0.911);
-}
+
 #footer__Facebook{
               grid-area: f5;
 }
@@ -215,11 +215,40 @@ h1{
     }
     #public{
         display: grid;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 450px;
-        grid-template-areas: "p1 p2 p3";
-        justify-content: center;
+        grid-template-columns: 15% 30% 30% 20%;
+        grid-template-rows: "10px 300px 10px 300px 10px 10px";
+        grid-template-areas: "v1 v2 v2 v3"
+                             "v4 v5 v5 v6"
+                             "v7 v8 v8 v9"
+                             "v10 v11 v11 v12"
+                             "v13 v14 v14 v15"
+                             "v16 v17 v17 v18";
         background-color: rgb(51, 51, 61);
+        height: 950px;
+        column-gap: 10px;
+    }
+    .card{
+        grid-area: v6;
+        width: 100%;
+        height: 100%;
+    }
+    .card__Dos{
+        grid-area: v12;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 234, 218);
+    }
+    .card__Tres{
+        grid-area: v10;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 234, 218);
+    }
+    .card__Cuatro{
+         grid-area: v4;
+         width: 100%;
+         height: 100%;
+         background-color: rgb(247, 234, 218);
     }
     #seccionTrabajo{
            display: grid;
@@ -269,18 +298,32 @@ h1{
     }
    
     .video{
-        grid-area: p2;
+        grid-area: v5;
         width: 100%;
-        height: 80%;
+        height: 100%;
+    }
+    .videoMesa{
+        grid-area: v11;
+        width: 100%;
+        height: 100%;
     }
     .armando{
         color: rgb(215, 233, 250);
-        grid-area: p1;
-        font-size: 1em;
+        grid-area: v2;
+        font-size: 2em;
+        font-weight: 600;
         background-color:rgb(51, 51, 61);
-        justify-self: center;
-        align-self: center;
-        
+        justify-self:left;
+        align-self:flex-end;
+    }
+    .armandoMesa{
+        grid-area: v8;
+        color: rgb(215, 233, 250);
+        font-size: 2em;
+        font-weight: 600;
+        background-color:rgb(51, 51, 61);
+        justify-self:left;
+        align-self:flex-end;
     }
     .rotuloP{
         color: rgb(215, 233, 250);
@@ -341,23 +384,25 @@ iframe{
 #main{
     justify-content: space-evenly;
     display: grid;
-    grid-template-columns: 10% 50% 20% 10%;
+    grid-template-columns: 10% 50% 20% 17%;
     grid-template-rows: 60px 300px 300px 80px 80px;
     grid-template-areas: "m2 m2 m3 m3"
                          "m5 m5 m6 m6"
                          "m5 m5 m6 m6"
-                         "m10 m11 m12 13"
+                         "m10 m11 m12 m13"
                          "m14 m15 m16 m17";
     background-color:   rgb(51, 51, 61);
-    height: auto;             
+    height: 850px; 
+    column-gap: 7px;            
 }
 .iconos{
     grid-area: m15;
     display: inline-block;
+    background-color: rgb(62, 87, 172);
     }
 .iconos div{
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 120px;
 }
 .iconos img{
@@ -368,10 +413,43 @@ iframe{
     
 }
 .dolarHoy{
-    background-color: rgb(1, 105, 41);
+    background-color: rgb(62, 87, 172);
     color: $colorLetra;
     width: 100%;
     font-size: 20px;
+    font-weight: 600;
+}
+.dolarHoy:hover{
+    background-color: rgb(80, 116, 233);
+    color: rgb(14, 13, 13);
+    font-weight: 700;
+}
+#whatsapp{
+    grid-area: m12;
+    justify-self: center;
+}
+.bi-whatsapp{
+    color: rgb(244, 250, 246);
+    background-color: darkgreen;
+    border-radius: 20%;
+}
+.bi-whatsapp:hover{
+        color: rgb(252, 247, 247);
+        background-color: rgb(18, 223, 18);
+}
+.contactanos{
+    grid-area: m13;
+    background-color: rgb(248, 42, 42);
+    border-radius: 3%;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    justify-self: start;
+}
+.contactanos p{
+    text-align: center;
+    color:rgb(11, 13, 14);
+    font-weight: 600;
 }
 .d-block w-100{
     height: 100%;
@@ -435,44 +513,71 @@ iframe{
     margin-top: 20px;
    grid-area: m5;
    width: auto;
-   height: auto;
+   height: 100%;
 }
 #mapa{
+    margin-top: 20px;
     width: 100%;
-    height: 93%;
+    height: 91%;
     grid-area: m6;
-    align-self: center;
+    align-self: auto;
 }
 #presupuesto{
     grid-area: m11;
+    border-radius: 3%;
 }
 #presupuesto:hover{
-            color: $colorLetra;
+            color: rgb(255, 255, 255);
 }
 
  .presupuestoHijo{
-   color:rgb(215, 233, 250);
-   background-image: linear-gradient(to left ,  rgb(247, 55, 55) , rgb(220, 20, 60));
+    background-color: rgb(62, 87, 172);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     width: 100%;
     height: 100%;
     justify-self: center;
     margin-bottom: 10px;
+    border: solid rgb(62, 87, 172) 3px;
 }  
 .presupuestoHijo:hover{
-          background-color: rgba(38, 70, 253, 0.911);
+         background-color:  rgb(80, 116, 233);
           color: $colorLetra;
 }
 .consulta{
-   color:rgb(215, 233, 250);
+   color:rgb(11, 13, 14);
+   font-weight: 500;
 }
 .consulta:hover{
     color: $colorLetra;
+    font-weight: 800;
+}
+.paga{
+    background-color:rgb(62, 87, 172);
+    grid-area: m14;
+    padding-top: 10px;
+    color: $colorLetra;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3%;
+}
+.qusa{
+    grid-area: f8;
+    text-align: center;
+    font-weight: 600;
+    justify-self: center;
+    align-self: end;
 }
 #mainContacto{
-   background-color: rgb(215, 233, 250);
+   background-color: rgb(17, 47, 68);
    height: auto;
+   color: #fff;
+}
+.container{
+    padding: 60px;
+    height: 800px;
+    width: 700px;
 }
   @media only screen and (max-width: 600px){
         
