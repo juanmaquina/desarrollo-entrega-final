@@ -10,7 +10,7 @@ main {
   height: auto; }
 
 .padreTitulo {
-  background-color: #33333d;
+  background-image: linear-gradient(to left, #f73737, crimson);
   display: grid;
   grid-template-columns: 40% 40% 20%;
   grid-template-rows: 100px 40px;
@@ -19,7 +19,6 @@ main {
   align-items: center; }
 
 .hijoUno {
-  background-color: #33333d;
   grid-area: a1;
   justify-items: stretch;
   align-self: start; }
@@ -44,7 +43,6 @@ h1 {
   color: #d7e9fa;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: calc( 50px + 1vw);
-  background-color: #33333d;
   padding: 8%;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -371,7 +369,7 @@ iframe {
 .iconos {
   grid-area: m15;
   display: inline-block;
-  background-color: #3e57ac; }
+  background-color: #e7c297; }
 
 .iconos div {
   display: inline-block;
@@ -385,14 +383,14 @@ iframe {
   grid-area: m14; }
 
 .dolarHoy {
-  background-color: #3e57ac;
-  color: white;
+  background-color: #e7c297;
+  color: #0b0d0e;
   width: 100%;
   font-size: 20px;
   font-weight: 600; }
 
 .dolarHoy:hover {
-  background-color: #5074e9;
+  background-color: darkgreen;
   color: #0e0d0d;
   font-weight: 700; }
 
@@ -411,7 +409,7 @@ iframe {
 
 .contactanos {
   grid-area: m13;
-  background-color: #f82a2a;
+  background-color: #e7c297;
   border-radius: 3%;
   margin-top: 10px;
   text-align: center;
@@ -501,17 +499,17 @@ iframe {
   color: white; }
 
 .presupuestoHijo {
-  background-color: #3e57ac;
+  background-color: #e7c297;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
   width: 100%;
   height: 100%;
   justify-self: center;
   margin-bottom: 10px;
-  border: solid #3e57ac 3px; }
+  border: solid #f8edcf 2px; }
 
 .presupuestoHijo:hover {
-  background-color: #5074e9;
+  background-color: #f74141;
   color: white; }
 
 .consulta {
@@ -523,13 +521,14 @@ iframe {
   font-weight: 800; }
 
 .paga {
-  background-color: #3e57ac;
+  background-color: #e7c297;
   grid-area: m14;
   padding-top: 10px;
-  color: white;
+  color: #0b0d0e;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
+  border: solid #f8edcf 2px;
   border-radius: 3%; }
 
 .qusa {
@@ -550,32 +549,12 @@ iframe {
   width: 700px; }
 
 @media only screen and (max-width: 600px) {
-  #menuNav {
-    background-color: #e9212b;
-    position: sticky;
-    top: 0pt; }
-  #padre {
-    background-color: #33333d;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 45px;
-    grid-template-areas: "a1 a2 a3 a4";
-    column-gap: 1em; }
-  #padre #hijoUno {
-    grid-area: a1; }
-  #padre #hijoDos {
-    grid-area: a2; }
-  #padre #hijoCuatro {
-    grid-area: a3; }
-  #padre #hijoCinco {
-    grid-area: a4; }
-  .cUno, .cDos, .cTres, .cCuatro, .cCinco {
-    font-size: 12px; }
   #main {
-    row-gap: 15px;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 300px 100px 300px 150px 150px;
-    grid-template-areas: "q1"  "q2" "q3" "q4" "q5" "q6";
+    row-gap: 10px;
+    column-gap: 4px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 80px 300px 80px 300px 120px 100px 100px;
+    grid-template-areas: "q1 q1"  "q2 q2" "q3 q3" "q4 q4" "q5 q6" "q7 q8" "q9 q10";
     height: auto; }
   #queHacemos {
     grid-area: q1;
@@ -602,23 +581,117 @@ iframe {
   #presupuesto {
     grid-area: q5;
     width: min-content;
-    height: 60%;
-    justify-self: center; }
+    height: 70%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
+  .presupuestoHijo {
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
+  .consulta {
+    font-size: 20px;
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
   #whatsapp {
     grid-area: q6;
-    height: 50%;
-    width: 40%;
+    height: 60%;
+    width: 100%;
+    align-self: center;
+    margin-left: 130px; }
+  .iconos {
+    grid-area: q8;
+    display: inline-block;
+    background-color: #3f3f41; }
+  .iconos div {
+    display: inline-block;
+    justify-items: center;
+    width: 25%;
+    margin-left: 8px;
+    margin-top: 21px; }
+  .paga {
+    grid-area: q7;
+    width: 100%;
+    height: 100%;
     justify-self: center;
-    margin-top: 1em; }
-  *header {
+    align-self: center;
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
+  .contactanos {
+    grid-area: q9;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
+  .contactanos p {
+    color: white; }
+  .dolar {
+    grid-area: q10;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    background-color: #3f3f41; }
+  .dolarDiv {
     height: 100px;
+    background-color: #3f3f41; }
+  .dolar button {
+    background-color: #3f3f41;
+    color: white;
+    border: none; }
+  #footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 80px 150px 150px 30px;
+    grid-template-areas: "f1" "f2" "f3" "f4" "f5";
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    row-gap: 10px; }
+  .footerH3 {
+    grid-area: f1;
+    width: 100%;
+    height: 70px;
+    align-self: start;
+    background-image: linear-gradient(to left, #f73737, #b60c2e); }
+  .card__Footer {
+    grid-area: f3;
+    width: 100%;
+    background-image: linear-gradient(to left, #f73737, #b60c2e); }
+  .card-body h5 {
+    grid-area: f3;
+    width: 100%; }
+  #footer__Facebook {
+    grid-area: f2;
+    justify-self: center; }
+  #footer__Twitter {
+    display: none; }
+  #footer__Instagram {
+    display: none; }
+  .footer__DivH5 {
+    grid-area: f4; }
+  .footer__H5 {
+    background-image: linear-gradient(to left, #f73737, #b60c2e); }
+  .qusa {
+    grid-area: f5; }
+  *header {
+    height: 180px;
     border-bottom: none; }
   .padreTitulo {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 50px;
-    grid-template-areas: "t1 t2" "t1 t3";
+    grid-template-rows: 100px 80px;
+    grid-template-areas: "t1 t2" "t3 t4";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    background-image: linear-gradient(to left, #f73737, #b60c2e); }
   .hijoUno {
     grid-area: t1;
     justify-self: center;
@@ -633,16 +706,22 @@ iframe {
     font-weight: bolder;
     text-shadow: 2px 2px 1px #fff; }
   .hijoDos {
-    grid-area: t3; }
+    grid-area: t4; }
   .hijoDos p {
     font-size: 13px;
-    color: #d7ec16;
+    color: #f0eeee;
     text-align: center;
-    margin-top: 25px; }
+    margin-top: 25px;
+    background-image: linear-gradient(to left, #f73737, #b60c2e); }
+  .servicio {
+    grid-area: t3;
+    font-size: .7em; }
   .flete {
     grid-area: t2;
     height: 20px;
-    width: 50px; }
+    width: 50px;
+    color: #3aacf8;
+    margin-bottom: 30px; }
   #mainProductos {
     display: grid;
     grid-template-columns: 95%;
@@ -670,7 +749,75 @@ iframe {
     height: 100%;
     border-radius: 3%; }
   .rotuloP {
-    font-size: 20px; } }
+    font-size: 20px; }
+  #public {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 250px 40px 250px 350px 230px 200px 230px;
+    grid-template-areas: "v1" "v2" "v3" "v4" "v5" "v6" "v7" "v8";
+    justify-content: justify;
+    justify-items: center;
+    align-items: stretch;
+    row-gap: 7px;
+    height: 1650px; }
+  .armando {
+    grid-area: v1;
+    font-size: .9em;
+    margin-left: 10px; }
+  .video {
+    grid-area: v2;
+    width: 100%;
+    height: 250px; }
+  *iframe {
+    width: 100%; }
+  .armandoMesa {
+    grid-area: v3;
+    width: 100%;
+    font-size: .9em;
+    margin-left: 10px; }
+  .videoMesa {
+    grid-area: v4;
+    width: 100%;
+    height: 100%; }
+  .card {
+    grid-area: v5;
+    width: 100%;
+    height: 350px;
+    align-self: start; }
+  .card__Tres {
+    grid-area: v6;
+    width: 100%;
+    height: auto;
+    justify-self: start;
+    background-image: linear-gradient(to left, #33333d, #4c4c57);
+    color: white; }
+  .card__Dos {
+    grid-area: v7;
+    width: 100%;
+    height: auto;
+    justify-self: justify; }
+  .card__Cuatro {
+    grid-area: v8;
+    width: auto;
+    justify-self: start;
+    align-self: auto;
+    background-image: linear-gradient(to left, #33333d, #4c4c57);
+    color: white; }
+  #mainContacto {
+    display: Grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1200px;
+    grid-template-areas: "c1 c2 c3";
+    justify-content: justify;
+    justify-items: center;
+    height: 1000px;
+    width: 100%; }
+  .container {
+    grid-area: c2;
+    justify-self: first baseline;
+    width: 100%;
+    padding: 20px; } }
 
 .pres {
   display: inline-block;
