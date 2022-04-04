@@ -159,7 +159,7 @@ h1{
      grid-template-areas: "p1 p2"
                            "p3 p4";
      column-gap: 2em;
-     row-gap: 2em; 
+     row-gap: 2.5em; 
      justify-content: center; 
      height: auto;                    
  }
@@ -258,8 +258,8 @@ h1{
            justify-content: center;
            align-content: center;
            column-gap: 2%;
-           row-gap: 10px;
-           height: 800px;
+           row-gap: 40px;
+           height: 870px;
     }
     @mixin estiloTrabajo{
          width: $fullWidth;
@@ -269,6 +269,8 @@ h1{
     .trabajoUno{
         @include estiloTrabajo;
           grid-area: t1;
+          color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
     }
     .trabajoUno:hover{
              transform: scale(1.1,1.1);
@@ -285,14 +287,20 @@ h1{
     .trabajoDos{
         @include estiloTrabajo;
           grid-area: t2;
+          color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
     }
     .trabajoTres{
         @include estiloTrabajo;
         grid-area: t3;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
     }
     .trabajoCuatro{
         @include estiloTrabajo;
         grid-area: t4;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
     }
    
     .video{
@@ -396,7 +404,7 @@ iframe{
 .iconos{
     grid-area: m15;
     display: inline-block;
-    background-color:rgb(231, 194, 151); 
+    background-color: rgb(79, 79, 80);
     }
 .iconos div{
     display: inline-block;
@@ -411,11 +419,12 @@ iframe{
     
 }
 .dolarHoy{
-    background-color: rgb(231, 194, 151);
+    background-color: rgb(79, 79, 80);
     color: rgb(11, 13, 14);
     width: 100%;
     font-size: 20px;
     font-weight: 600;
+    border: none;
 }
 .dolarHoy:hover{
     background-color: darkgreen;
@@ -437,7 +446,7 @@ iframe{
 }
 .contactanos{
     grid-area: m13;
-    background-color: rgb(231, 194, 151);
+    background-color:rgb(79, 79, 80);
     border-radius: 3%;
     margin-top: 10px;
     text-align: center;
@@ -523,20 +532,20 @@ iframe{
 #presupuesto{
     grid-area: m11;
     border-radius: 3%;
+    border: none;
 }
 #presupuesto:hover{
             color: rgb(255, 255, 255);
 }
 
  .presupuestoHijo{
-    background-color: rgb(231, 194, 151);
+    background-color: rgb(79, 79, 80);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     width: 100%;
     height: 100%;
     justify-self: center;
     margin-bottom: 10px;
-    border: solid rgb(248, 237, 207) 2px;
 }  
 .presupuestoHijo:hover{
          background-color:  rgb(247, 65, 65);
@@ -551,14 +560,13 @@ iframe{
     font-weight: 800;
 }
 .paga{
-    background-color: rgb(231, 194, 151);
+    background-color: rgb(79, 79, 80);
     grid-area: m14;
     padding-top: 10px;
     color:rgb(11, 13, 14);
     text-align: center;
     font-size: 15px;
     font-weight: 700;
-    border: solid rgb(248, 237, 207) 2px;
     border-radius: 3%;
 }
 .qusa{
@@ -938,7 +946,42 @@ iframe{
         width: 100%;
         padding: 20px;
     }
-
+    #seccionTrabajo{
+        display: Grid;
+        grid-template-columns: 95%;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-areas: "tr1"
+                             "tr2"
+                             "tr3"
+                             "tr4";
+        justify-content: justify;
+        justify-items: center;
+        align-items: center;
+        height: 1370px;
+        width: 100%;
+        row-gap: 40px;
+    }
+    .trabajoUno{
+        grid-area: tr1;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
+    }
+    .trabajoDos{
+        grid-area: tr2;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
+    }
+    .trabajoTres{
+        grid-area: tr3;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
+    }
+    .trabajoCuatro{
+        grid-area: tr4;
+        margin-bottom: 5px;
+        color: rgb(10, 10, 10);
+        background-color: rgb(98, 143, 240);
+    }
  }
 
    .pres{

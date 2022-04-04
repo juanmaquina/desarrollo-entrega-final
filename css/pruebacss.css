@@ -146,7 +146,7 @@ h1 {
   grid-template-rows: 400px 400px;
   grid-template-areas: "p1 p2" "p3 p4";
   column-gap: 2em;
-  row-gap: 2em;
+  row-gap: 2.5em;
   justify-content: center;
   height: auto; }
 
@@ -233,14 +233,16 @@ h1 {
   justify-content: center;
   align-content: center;
   column-gap: 2%;
-  row-gap: 10px;
-  height: 800px; }
+  row-gap: 40px;
+  height: 870px; }
 
 .trabajoUno {
   width: 100%;
   height: 100%;
   border-radius: 3%;
-  grid-area: t1; }
+  grid-area: t1;
+  color: #0a0a0a;
+  background-color: #628ff0; }
 
 .trabajoUno:hover {
   transform: scale(1.1, 1.1); }
@@ -258,19 +260,25 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 3%;
-  grid-area: t2; }
+  grid-area: t2;
+  color: #0a0a0a;
+  background-color: #628ff0; }
 
 .trabajoTres {
   width: 100%;
   height: 100%;
   border-radius: 3%;
-  grid-area: t3; }
+  grid-area: t3;
+  color: #0a0a0a;
+  background-color: #628ff0; }
 
 .trabajoCuatro {
   width: 100%;
   height: 100%;
   border-radius: 3%;
-  grid-area: t4; }
+  grid-area: t4;
+  color: #0a0a0a;
+  background-color: #628ff0; }
 
 .video {
   grid-area: v5;
@@ -369,7 +377,7 @@ iframe {
 .iconos {
   grid-area: m15;
   display: inline-block;
-  background-color: #e7c297; }
+  background-color: #4f4f50; }
 
 .iconos div {
   display: inline-block;
@@ -383,11 +391,12 @@ iframe {
   grid-area: m14; }
 
 .dolarHoy {
-  background-color: #e7c297;
+  background-color: #4f4f50;
   color: #0b0d0e;
   width: 100%;
   font-size: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  border: none; }
 
 .dolarHoy:hover {
   background-color: darkgreen;
@@ -409,7 +418,7 @@ iframe {
 
 .contactanos {
   grid-area: m13;
-  background-color: #e7c297;
+  background-color: #4f4f50;
   border-radius: 3%;
   margin-top: 10px;
   text-align: center;
@@ -493,20 +502,20 @@ iframe {
 
 #presupuesto {
   grid-area: m11;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: none; }
 
 #presupuesto:hover {
   color: white; }
 
 .presupuestoHijo {
-  background-color: #e7c297;
+  background-color: #4f4f50;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
   width: 100%;
   height: 100%;
   justify-self: center;
-  margin-bottom: 10px;
-  border: solid #f8edcf 2px; }
+  margin-bottom: 10px; }
 
 .presupuestoHijo:hover {
   background-color: #f74141;
@@ -521,14 +530,13 @@ iframe {
   font-weight: 800; }
 
 .paga {
-  background-color: #e7c297;
+  background-color: #4f4f50;
   grid-area: m14;
   padding-top: 10px;
   color: #0b0d0e;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
-  border: solid #f8edcf 2px;
   border-radius: 3%; }
 
 .qusa {
@@ -817,7 +825,35 @@ iframe {
     grid-area: c2;
     justify-self: first baseline;
     width: 100%;
-    padding: 20px; } }
+    padding: 20px; }
+  #seccionTrabajo {
+    display: Grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: "tr1" "tr2" "tr3" "tr4";
+    justify-content: justify;
+    justify-items: center;
+    align-items: center;
+    height: 1370px;
+    width: 100%;
+    row-gap: 40px; }
+  .trabajoUno {
+    grid-area: tr1;
+    color: #0a0a0a;
+    background-color: #628ff0; }
+  .trabajoDos {
+    grid-area: tr2;
+    color: #0a0a0a;
+    background-color: #628ff0; }
+  .trabajoTres {
+    grid-area: tr3;
+    color: #0a0a0a;
+    background-color: #628ff0; }
+  .trabajoCuatro {
+    grid-area: tr4;
+    margin-bottom: 5px;
+    color: #0a0a0a;
+    background-color: #628ff0; } }
 
 .pres {
   display: inline-block;
